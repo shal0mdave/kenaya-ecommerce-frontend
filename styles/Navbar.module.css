@@ -1,0 +1,23 @@
+.Nav{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.NavLink{
+    font-size: 18px;
+    padding: 8px;
+    padding-left: 42px;
+    color: var(--black-color);
+    text-decoration: none;
+    font-family: var(--font-family-poppins);
+    font-weight: 500;
+}
+.NavLink:hover{
+    color: var(--brown-color);
+}
+@media screen and (max-width: 940px) {
+    .NavLink{
+        padding-left: unset;
+    }
+}
+
