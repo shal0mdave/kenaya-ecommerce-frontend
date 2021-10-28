@@ -3,11 +3,67 @@
     padding-bottom: 8rem;
 }
 
-.AboutSection .Logo{
-    height: 200px;
-    background-color: red;
+.AboutSection .CardContainer{
+cursor: pointer;
+width: 350px;
+height: 490px;
+perspective: 600;
+position: relative;
 }
 
-.AboutSection .AboutText{
+.AboutSection .Card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.AboutSection .Card:hover {
+    transform: rotateY(180deg);
+    
+  }
+
+.AboutSection .FrontCard{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../public/img/aboutImage.png);
+    background-size: cover;
+    backface-visibility: hidden;
+}
+
+.AboutSection .BackCard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:var(--green-color);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+
+}
+
+.AboutSection .BackText{
+    color: #ffff;
+    text-align: justify;
+    padding: 15px;
     font-size: 14px;
+}
+
+.AboutSection .AboutTitle{
+font-weight: bold;
+margin-top: 30px;
+font-size: 16px;
+line-height: 24px;
+color: var(--green-color);
+
+
+}
+
+
+.AboutSection .AboutText{
+font-size: 14px;
+line-height: 21px;
+text-align: justify;
+color: var(--green-color);
 }
