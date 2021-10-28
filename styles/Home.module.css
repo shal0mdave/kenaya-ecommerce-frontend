@@ -3,7 +3,22 @@
   height: 60vh;    
   padding-top: 12rem;
   padding-bottom: 12rem;
-  background-color: var(--brown-color);
+
+}
+
+.Header .Video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+
+.FeaturesContainer{
+  background: white;
 }
 
 .Header .TextContainer{
@@ -44,6 +59,7 @@
 .Header .TextContainer .PlayerIcon:hover > svg{
   transform: scale(1.1);
 }
+
 
 
 @media screen and (max-width: 940px) {

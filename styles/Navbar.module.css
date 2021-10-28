@@ -1,7 +1,12 @@
 .Nav{
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+    background-color: white;
 }
+
+.Logo{
+    width: 75px;
+    }
 
 .NavLink{
     font-size: 18px;

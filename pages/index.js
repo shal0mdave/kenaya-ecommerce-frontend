@@ -9,6 +9,7 @@ export default function Home() {
 		<Layout>
 			<header className={Styles.Header}>
 				<Container>
+				<video src="video/homepage.mp4" className={Styles.Video} autoPlay loop muted ></video>
 					<div className={Styles.TextContainer}>
 						<h3>Best Collection</h3>
 						<h1>The Concious Micro Collection</h1>
@@ -18,6 +19,7 @@ export default function Home() {
 							</div>
 						</Link>
 					</div>
+					
 				</Container>
 			</header>
 			<section className={Styles.FeaturesContainer}>

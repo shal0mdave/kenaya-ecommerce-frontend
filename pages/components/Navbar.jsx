@@ -8,7 +8,7 @@ const Navigation = () => {
         <Navbar className={Styles.Nav} collapseOnSelect expand="lg" variant="light" >
             <Container>
                 <Navbar.Brand href="/">
-                    <img src="/img/logo.png" alt="Kenaya" />
+                    <img src="/img/logo.png" className={Styles.Logo} alt="Kenaya" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
