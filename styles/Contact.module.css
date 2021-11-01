@@ -1,0 +1,59 @@
+.ContactSection{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.ContactSection .Details {
+    display: block;
+}
+.ContactSection .Details svg{
+    display: block;
+    margin: 10px auto;
+}
+.ContactSection .Details h1{
+    font-family: var(--font-family-poppins);
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--brown-color);
+    text-transform: uppercase;
+}
+.ContactSection .Details p{
+    font-family: var(--font-family-poppins);
+    font-size: 22px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--brown-color);
+}
+
+
+.ContactSection .Form{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: block;
+    position: relative;
+}
+.ContactSection .Form h1{
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--brown-color);
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.ContactSection .Form label{
+    font-family: var(--font-family-poppins);
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    color: var(--brown-color);
+    text-transform: uppercase;
+}
+.ContactSection .Form input{
+
+}
+.ContactSection .Form button{
+
+}

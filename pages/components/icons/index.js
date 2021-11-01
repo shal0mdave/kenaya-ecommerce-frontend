@@ -6,6 +6,9 @@ import Payment from './Payment'
 import Cactus from './Cactus'
 import Needle from './Needle'
 import Play from './Play'
+import Phone from './Phone'
+import Envelope from './Envelope'
+import Pin from './Pin'
 
 
 export { 
@@ -16,5 +19,8 @@ export {
     Payment,
     Cactus,
     Needle,
-    Play
+    Play,
+    Phone,
+    Envelope,
+    Pin
 }
