@@ -9,6 +9,8 @@ import Play from './Play'
 import Phone from './Phone'
 import Envelope from './Envelope'
 import Pin from './Pin'
+import GoogleSignIn from './GoogleSignIn'
+import FacebookSignIn from './FacebookSignIn'
 
 
 export { 
@@ -22,5 +24,7 @@ export {
     Play,
     Phone,
     Envelope,
-    Pin
+    Pin,
+    GoogleSignIn,
+    FacebookSignIn
 }
