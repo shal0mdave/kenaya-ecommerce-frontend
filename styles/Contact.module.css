@@ -1,0 +1,19 @@
+
+
+
+
+.Feature h6{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--black-color);
+   
+  }
+
+.Feature p{
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+    color: var(--black-color);
+  
+  }
