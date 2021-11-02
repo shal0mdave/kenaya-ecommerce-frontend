@@ -62,7 +62,6 @@
     margin-bottom: 4rem;
 }
 
-
 .ContactSection .Form label{
     font-family: var(--font-family-poppins);
     font-size: 18px;
@@ -81,5 +80,4 @@
 .ContactSection .Form button{
     background-color: var(--brown-color);
     color: white;
-    text-decoration: none;
 }
