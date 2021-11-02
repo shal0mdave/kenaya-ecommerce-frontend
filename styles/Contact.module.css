@@ -1,39 +1,38 @@
-<<<<<<< HEAD
 
-
-
-
-.Feature h6{
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--black-color);
-   
-  }
-
-.Feature p{
-    text-align: center;
-    width: 80%;
-    margin: 0px auto;
-    color: var(--black-color);
-  
-  }
-=======
 .ContactSection{
     padding-top: 8rem;
     padding-bottom: 8rem;
+    background-color: #F1EFE2;
+}
+
+.ContactSection .Title{
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 50px;
 }
 
 .ContactSection .Details {
-    display: block;
+  display: block;
 }
+
+.ContactSection .Lines {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 2px solid var(--brown-color);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
 .ContactSection .Details svg{
     display: block;
     margin: 10px auto;
 }
-.ContactSection .Details h1{
+.ContactSection .Details h6{
     font-family: var(--font-family-poppins);
-    font-size: 26px;
+    font-size: 17px;
     font-weight: 500;
     text-align: center;
     color: var(--brown-color);
@@ -41,12 +40,11 @@
 }
 .ContactSection .Details p{
     font-family: var(--font-family-poppins);
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 200;
     text-align: center;
     color: var(--brown-color);
 }
-
 
 .ContactSection .Form{
     padding-top: 4rem;
@@ -64,6 +62,7 @@
     margin-bottom: 4rem;
 }
 
+
 .ContactSection .Form label{
     font-family: var(--font-family-poppins);
     font-size: 18px;
@@ -73,9 +72,14 @@
     text-transform: uppercase;
 }
 .ContactSection .Form input{
+    background-color: #F1EFE2;
+}
 
+.ContactSection .Form textarea{
+    background-color: #F1EFE2;
 }
 .ContactSection .Form button{
-
+    background-color: var(--brown-color);
+    color: white;
+    text-decoration: none;
 }
->>>>>>> c341d765ba2d547cdd2e9e5e3718e2ae6589c240

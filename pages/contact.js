@@ -1,68 +1,3 @@
-<<<<<<< HEAD
-import { Col, Container, Row , Form, Button} from 'react-bootstrap'
-import Layout from './components/Layout'
-import Styles from '../styles/Contact.module.css'
-import Phone from './components/icons/Phone'
-import Email from './components/icons/Email'
-import Place from './components/icons/Place'
-
-export default function Contact (){
-    return(
-        <Layout>
-            <section className={Styles.ContactSection}>
-                <Container>
-                    <Row>
-                        <Col md={4}>
-                            <div className={Styles.Feature}>
-                                <Phone/>
-                            <h6>Number</h6>
-                            <p>+230 5476 8989</p>
-                            </div>
-
-                        </Col>
-                        <Col md={4}>
-                            <div className={Styles.Feature}>
-                            <Email/>
-                            <h6>Email</h6>
-                            <p>info@kenaya.com </p>
-                            </div>
-                            
-                        </Col>
-                        <Col md={4}>
-                            <div className={Styles.Feature}>
-                            <Place/>
-                            <h6>Location</h6>
-                            <p> Quatre Borne Palma Mauritius</p>
-                            </div>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="name">
-                                <Form.Label>Name</Form.Label>
-                                <Form.Control type="textarea"  />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email"  />
-                            </Form.Group>
-
-                            <Form.Group className="mb-3" controlId="ControlTextarea1">
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea"rows={3} />
-                            </Form.Group>
-
-                            <Button  type="submit">Submit</Button>
-                        </Form>
-                    </Row>
-                </Container>
-            </section>
-        </Layout>
-    )
-
-}
-
-=======
 import { Col, Container, Row, Button } from 'react-bootstrap'
 import Layout from './components/Layout'
 import { Phone, Pin, Envelope } from './components/icons'
@@ -74,24 +9,33 @@ export default function Contact() {
 			<section className={Styles.ContactSection}>
 				<Container>
 					<Row>
-						<Col md={4}>
-							<div className={Styles.Details}>
+                        <div className={Styles.Title}>
+                            <h1>Contact</h1>
+                        </div>
+						<Col md={4} className={Styles.Details } >
+							<div className={Styles.Lines} >
                                 <Phone />
-                                <h1>Phone</h1>
-                                <p>+23067676</p>
+                                <h6>Phone</h6>
+                                <p>+230 5476 8989</p>
                             </div>
+                        
 						</Col>
-                        <Col md={4}>
-                            <div className={Styles.Details}>
+                        <Col md={4}className={Styles.Details}>
+                            <div  className={Styles.Lines} >
                                 <Envelope />
-                                <h1>Email</h1>
+                                <h6>Email</h6>
+                                <div></div>
+                                <p>info@kenaya.com </p>
                             </div>
+
 						</Col>
-                        <Col md={4}>
-                            <div className={Styles.Details}>
+                        <Col md={4} className={Styles.Details}>
+                            <div className={Styles.NoLines} >
                                 <Pin />
-							    <h1>Location</h1>
+							    <h6>Location</h6>
+                                <p>Quatre Borne Palma Mauritius</p>
                             </div>
+                           
 						</Col>
 					</Row>
                     
@@ -102,7 +46,17 @@ export default function Contact() {
 
                                 <div className="mb-3">
                                     <label htmlFor="name" className="form-label">Name:</label>
-                                    <input type="text" className="form-control" placeholder="" />
+                                    <input type="text" className="form-control" placeholder=""  required/>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label">Email:</label>
+                                    <input type="text" className="form-control" placeholder=""  required/>
+                                </div>
+
+                                <div className="mb-3">
+                                    <label htmlFor="message" className="form-label">Message:</label>
+                                    <textarea className="form-control"type="text" name="message" placeholder="" required></textarea>
                                 </div>
 
                                 {/* ... */}
@@ -118,4 +72,3 @@ export default function Contact() {
 		</Layout>
 	)
 }
->>>>>>> c341d765ba2d547cdd2e9e5e3718e2ae6589c240
