@@ -80,13 +80,15 @@ export default function Contact() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        <td>Name : xxxx </td>
-                                        <td>Email: xxxx@gmail.com</td>
+                                        <p>Name : xxxx </p>
+                                        <p>Mobile: xxxxxxx </p>
+                                       
                                         </tr>
 
                                         <tr>
-                                        <td>Mobile: xxxxxxx </td>
-                                        <td>Adresss xxxxxxxxxxx</td>
+                                       
+                                        <p>Email: xxxx@gmail.com</p>
+                                        <p>Adresss xxxxxxxxxxx</p>
                                         </tr>
 
                                         <Button  variant="" > Edit Info</Button>
@@ -101,18 +103,18 @@ export default function Contact() {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                        <td>Name On Card</td>
-                                        <td>xxxxxxxxxxxxxx</td>
+                                        <p>Name On Card</p>
+                                        <p>xxxxxxxxxxxxxx</p>
                                         </tr>
 
                                         <tr>
-                                        <td>Card Number</td>
-                                        <td>xxxxxxxxxxxxxx</td>
+                                        <p>Card Number</p>
+                                        <p>xxxxxxxxxxxxxx</p>
                                         </tr>
 
                                         <tr>
-                                        <td>Valid Through</td>
-                                        <td>xxxxxxxxxxxxxx</td>
+                                        <p>Valid Through</p>
+                                        <p>xxxxxxxxxxxxxx</p>
                                         <td>CVC Code</td>
                                         <td>xxxxxxxxxxxxxx</td>
                                         </tr>
