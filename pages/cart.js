@@ -13,20 +13,21 @@ return(
             <Container>
                 <Row>
                 <div className={Styles.Title}>
-                            <h6> My Cart</h6>
+                            <h6> My Cart </h6>
                         </div>
                     <Table className={Styles.Product} responsive = "md" >
                         <thead className={Styles.TableHead}>
                             <tr>
                             <th >Items</th>
-                            <th>Descirption</th>
-                            <th>Size</th>
-                            <th>Quantity</th>
-                            <th>Unit Price</th>
-                            <th>Final Price</th>
-                            <th>Remove</th>
+                            <th >Descritpion</th>
+                            <th >Size</th>
+                            <th >Quantity</th>
+                            <th >Unit Price</th>
+                            <th >Final Price</th>
+                            <th >Remove</th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                             <tr>
                             <td > 
@@ -92,13 +93,14 @@ return(
                             <td>Rs ....</td>
                         </tr>
 
+                        <Button  variant=""  className={Styles.Pay}>Pay</Button>
                     </Table>
+                        
                     </Row>
                 
                 <Row>
                     <Col>
                     <Button  variant=""  className={Styles.ContinueShop}> Continue To Shop</Button>
-                    <Button  variant=""  className={Styles.Pay}>Pay</Button>
                     </Col>
                 </Row>
             </Container>

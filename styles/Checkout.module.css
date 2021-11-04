@@ -1,0 +1,14 @@
+.CheckoutSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #F1EFE2;
+}
+.CheckoutSection Col{
+    margin: 30px;
+}
+
+.CheckoutSection .ProductImage {
+    width: 80px;
+    height: 101px;
+    border-radius: 13px;
+    }

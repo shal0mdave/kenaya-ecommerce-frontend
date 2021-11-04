@@ -59,8 +59,16 @@ border-radius: 13px;
 }
 
 .CartSection .ContinueShop, .Pay {
-    background-color: var(--green-color);
     color: white;
-    border-radius: 15px ;
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    border: 1px solid #fff;
+    border-radius: 26px;
+    padding: 0.5em 2em;
+    margin: 0px auto;
+}
+
+.CartSection .Pay{
+    margin-top: 30px;
 }
 
