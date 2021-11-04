@@ -1,0 +1,66 @@
+
+.CartSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #F1EFE2;
+}
+
+.CartSection .Title{
+    margin-bottom: 30px ;
+    
+}
+
+
+.CartSection .Title h6 {
+    font-size: 22px;
+    padding: 8px;
+    color: var(--green-color);
+    text-decoration: none;
+    font-family: var(--font-family-poppins);
+    font-weight: 300;
+}
+
+.CartSection .TableHead tr{
+   border: var(--green-color);
+}
+
+
+.CartSection .TableHead th{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: var(--font-family-poppins);
+}
+
+.CartSection .ProductImage {
+width: 80px;
+height: 101px;
+border-radius: 13px;
+}
+
+.CartSection .Input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+}
+
+.CartSection .Payment  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.CartSection .Payment Table{
+    border-top: 2px solid var(--green-color);
+    width: 100%;
+    max-width: 350px;
+}
+
+.CartSection .Payment Table tr{
+    border-top: none;
+}
+
+.CartSection .ContinueShop, .Pay {
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 15px ;
+}
+

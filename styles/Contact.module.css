@@ -78,6 +78,12 @@
     background-color: #F1EFE2;
 }
 .ContactSection .Form button{
-    background-color: var(--brown-color);
     color: white;
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    border: 1px solid #fff;
+    border-radius: 26px;
+    padding: 0.5em 3em;
+    margin: 0px auto;
+    display: block;
 }

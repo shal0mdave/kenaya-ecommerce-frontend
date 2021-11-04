@@ -10,7 +10,7 @@ export default function Contact() {
 				<Container>
 					<Row>
                         <div className={Styles.Title}>
-                            <h1>Contact</h1>
+                            <h3>Contact</h3>
                         </div>
 						<Col md={4} className={Styles.Details } >
 							<div className={Styles.Lines} >

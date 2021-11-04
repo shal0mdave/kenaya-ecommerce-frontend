@@ -11,6 +11,7 @@ import Envelope from './Envelope'
 import Pin from './Pin'
 import GoogleSignIn from './GoogleSignIn'
 import FacebookSignIn from './FacebookSignIn'
+import Bin from './Bin'
 
 
 export { 
@@ -26,5 +27,6 @@ export {
     Envelope,
     Pin,
     GoogleSignIn,
-    FacebookSignIn
+    FacebookSignIn,
+    Bin,
 }
