@@ -1,0 +1,90 @@
+
+.MyordersSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.MyordersSection .Back{
+    margin-left: -40px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    border-radius: 26px;
+    padding: 0.5em 1em;   
+}
+
+.MyordersSection .Title h2 {
+    font-size: 26px;
+    padding: 8px;
+    color: var(--green-color);
+    font-family: var(--font-family-poppins);
+}
+
+.MyordersSection .Details{
+    margin-left: 10px;
+    width:600px;
+    padding-top:50px;
+}
+
+.MyordersSection .OrderDetails ,.PaymentDetails  {
+  width: 50%;
+  height:150px;
+  float:left;
+
+}
+
+.MyordersSection .DeliveryDetails, .Total{
+  width: 48%;
+  height:150px;
+  overflow:hidden;
+}
+
+.MyordersSection p {
+font-family: var(--font-family-poppins);
+font-style: normal;
+font-weight: 200;
+font-size: 16px;
+line-height: 15px;
+color: var(--brown-color);
+}
+
+.MyordersSection h3{
+font-family: var(--font-family-poppins);
+font-size: 20px;
+line-height: 21px;
+color: var(--brown-color);
+}
+
+.MyordersSection .TableHead tr{
+    border: var(--green-color);
+ }
+ 
+ 
+ .MyordersSection .TableHead th{
+     font-size: 16px;
+     font-weight: lighter;
+     font-family: var(--font-family-poppins);
+ }
+ 
+ .MyordersSection .ProductImage {
+ width: 80px;
+ height: 101px;
+ border-radius: 13px;
+ }
+ 
+ .MyordersSection .Input{
+         width: 40px;
+         height: 30px;
+         padding: 5px;
+ }
+ 
+ 
+ .MyordersSection .Track {
+     color: white;
+     font-family: var(--font-family-poppins);
+     background-color: var(--brown-color);
+     border-radius: 26px;
+     padding: 0.5em 2em;
+     margin: 0px auto;
+     float: right;
+ }
