@@ -1,0 +1,62 @@
+.WhishlistSection {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.WhishlistSection .Title{
+    margin-bottom: 80px ;
+}
+
+
+
+.WhishlistSection .TableHead tr{
+   border: var(--green-color);
+}
+
+
+.WhishlistSection .TableHead th{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: var(--font-family-poppins);
+}
+
+.WhishlistSection .ProductImage {
+width: 80px;
+height: 101px;
+border-radius: 13px;
+}
+
+.WhishlistSection .Input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+}
+
+.WhishlistSection .Payment  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.WhishlistSection .Payment Table{
+    border-top: 2px solid var(--green-color);
+    width: 100%;
+    max-width: 350px;
+}
+
+.WhishlistSection .Payment Table tr{
+    border-top: none;
+}
+
+.WhishlistSection .ContinueShop, .Pay {
+    color: white;
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    border-radius: 26px;
+    padding: 0.5em 2em;
+    margin: 0px auto;
+}
+
+.WhishlistSection .Pay{
+    margin-top: 30px;
+}
+
