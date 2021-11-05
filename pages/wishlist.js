@@ -18,7 +18,7 @@ return(
                     
                     <Col md={7} >
                         <div className={Styles.Title}>
-                            <h3> My Whislist </h3>
+                            <h3> My Whishlist </h3>
                         </div>
                                 <Table className={Styles.Product} responsive = "md" >
                                     <thead className={Styles.TableHead}>
