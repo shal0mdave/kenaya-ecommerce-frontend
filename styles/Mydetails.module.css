@@ -1,0 +1,37 @@
+
+.MydetailsSection{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.MydetailsSection .Title{
+    font-family: var(--font-family-poppins);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--brown-color);
+
+}
+
+.MydetailsSection .Form{
+    margin-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: block;
+    position: relative;
+}
+.MydetailsSection .Form label{
+    font-family: var(--font-family-poppins);
+    font-size: 18px;
+    color: var(--brown-color);   
+}
+
+.MydetailsSection Button {
+    color: white;
+    font-family: var(--font-family-poppins);
+    background-color: var(--brown-color);
+    border: 1px solid #fff;
+    border-radius: 26px;
+    padding: 0.5em 3em;
+    margin: 0px auto;
+    display: block;
+    float: right;
+} 
