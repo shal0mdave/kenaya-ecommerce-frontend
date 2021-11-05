@@ -1,0 +1,57 @@
+.ShopSection{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.ShopSection .FormContainer{
+    margin-bottom: 3em;
+}
+
+.ShopSection .ProductContainer{
+    margin-bottom: 3em;
+}
+.ShopSection .ProductContainer .Slide{
+    min-height: 400px;
+    max-width: 90%;
+    background-color: #C4C4C4;
+}
+.ShopSection .ProductContainer .Slide img{
+    margin: 24px auto;
+}
+.ShopSection .ProductContainer .Slide .TagContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.ShopSection .ProductContainer .Slide .TagContainer h3{
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--brown-color);
+}
+.ShopSection .ProductContainer .Slide .TagContainer .CollectionName{
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--brown-color);
+}
+.ShopSection .ProductContainer .Slide .TagContainer .Price{
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    text-align: right;
+    font-weight: bold;
+    color: var(--brown-color);
+    line-height: 0;
+}
+.ShopSection .ProductContainer .Slide .TagContainer a{
+    font-family: var(--font-family-poppins);
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+    background-color: var(--brown-color);
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
