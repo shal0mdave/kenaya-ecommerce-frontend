@@ -1,7 +1,7 @@
 import { Col, Container, Row, Table, Button } from 'react-bootstrap'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/Cart.module.css'
-import { Bin } from './components/icons'
+import { Bin } from '../components/icons'
 
 
 

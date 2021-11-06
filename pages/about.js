@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/About.module.css'
 
 export default function About() {

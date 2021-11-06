@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import Slider from 'react-slick'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/Shop.module.css'
 
 export default function Shop() {

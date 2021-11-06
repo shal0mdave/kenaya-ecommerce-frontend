@@ -1,6 +1,6 @@
 import { Col, Container, Row, Button } from 'react-bootstrap'
-import Layout from './components/Layout'
-import { Phone, Pin, Envelope } from './components/icons'
+import Layout from '../components/Layout'
+import { Phone, Pin, Envelope } from '../components/icons'
 import Styles from '../styles/Contact.module.css'
 
 export default function Contact() {

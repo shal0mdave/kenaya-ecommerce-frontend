@@ -1,5 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import { SignInForm, SignUpForm } from './components'
 import Styles from '../styles/User.module.css'
 

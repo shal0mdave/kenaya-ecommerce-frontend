@@ -1,5 +1,5 @@
 import { Container, Row, Col,Table,Button } from 'react-bootstrap'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/Myorders.module.css'
 
 

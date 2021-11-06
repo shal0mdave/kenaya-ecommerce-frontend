@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Col, Container, Row } from 'react-bootstrap'
-import Layout from './components/Layout'
-import { Delivery, Payment, Cactus, Needle, Play } from './components/icons'
+import Layout from '../components/Layout'
+import { Delivery, Payment, Cactus, Needle, Play } from '../components/icons'
 import Styles from '../styles/Home.module.css'
 
 export default function Home() {

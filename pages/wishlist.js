@@ -1,7 +1,7 @@
 import { Col, Container, Row, Table, Button } from 'react-bootstrap'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import Styles from '../styles/Wishlist.module.css'
-import { Bag, Bin } from './components/icons'
+import { Bag, Bin } from '../components/icons'
 
 
 
