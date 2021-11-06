@@ -42,9 +42,9 @@ const SignUpForm = () => {
                             Sign Up
                         </Button>
                     </div>
-                    <div class="mt-4 form-check">
-                        <input class="form-check-input" type="checkbox" value="" name="tc" checked />
-                        <label class="form-check-label" htmlFor="tc">I agree with Term &amp; Conditions</label>
+                    <div className="mt-4 form-check">
+                        <input className="form-check-input" type="checkbox" value="" name="tc" checked />
+                        <label className="form-check-label" htmlFor="tc">I agree with Term &amp; Conditions</label>
                     </div>
                 </form>
             </Col>
