@@ -34,7 +34,7 @@ export default function Contact() {
 
                                         <tr>
                                         <td>
-                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg" alt="JasminePlaysuit">
+                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg" alt="JasminePlaysuit" />
                                         </td>
                                         <td>Jasmine Playsuit </td>
                                         <td> Size:M </td>
