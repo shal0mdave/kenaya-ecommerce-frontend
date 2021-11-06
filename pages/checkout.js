@@ -1,7 +1,6 @@
 import { Col, Container, Row, Button, Table } from 'react-bootstrap'
 import Layout from './components/Layout'
 import Styles from '../styles/Checkout.module.css'
-import { Bin } from './components/icons'
 
 export default function Contact() {
 	return (
