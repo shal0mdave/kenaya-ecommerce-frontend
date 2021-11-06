@@ -28,7 +28,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(../public/img/aboutImage.png);
+    background-image: url('../public/img/AboutImage.png');
     background-size: cover;
     backface-visibility: hidden;
 }
