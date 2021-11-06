@@ -1,5 +1,5 @@
 import { Row, Col, Button } from 'react-bootstrap'
-import Styles from '../../styles/User.module.css'
+import Styles from '../styles/User.module.css'
 
 const SignInForm = () => {
     return (

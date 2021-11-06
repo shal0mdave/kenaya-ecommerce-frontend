@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Navbar, Container, Nav } from 'react-bootstrap'
 import { Bag, Profile, Search } from './icons'
-import Styles from '../../styles/Navbar.module.css'
+import Styles from '../styles/Navbar.module.css'
 
 const Navigation = () => {
     return (
