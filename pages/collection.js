@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { Col, Container, Button, Row, Card } from 'react-bootstrap'
 import Slider from 'react-slick'
+<<<<<<< HEAD
 import Layout from '../components/Layout'
+=======
+import Layout from './components/Layout'
+>>>>>>> f9a3eac761bea5456494f6563d7943121072eaf0
 import Styles from '../styles/Collection.module.css'
 
 export default function Collection() {
