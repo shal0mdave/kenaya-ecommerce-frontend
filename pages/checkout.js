@@ -23,7 +23,7 @@ export default function Contact() {
                                     <tbody>
                                         <tr>
                                         <td > 
-                                            <img className={Styles.ProductImage} src="./img/ZinniaDress.jpg"></img>
+                                            <img className={Styles.ProductImage} src="./img/ZinniaDress.jpg" alt="ZinniaDress" />
                                         </td>
                                         <td>Zinnia Dress </td>
                                         <td>Size: S</td>
@@ -34,7 +34,7 @@ export default function Contact() {
 
                                         <tr>
                                         <td>
-                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg"></img>
+                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg" alt="JasminePlaysuit">
                                         </td>
                                         <td>Jasmine Playsuit </td>
                                         <td> Size:M </td>
@@ -44,7 +44,7 @@ export default function Contact() {
 
                                         <tr>
                                         <td>
-                                        <img className={Styles.ProductImage} src="./img/AtagaPants3.jpg"></img>
+                                        <img className={Styles.ProductImage} src="./img/AtagaPants3.jpg" alt="Ataga Pants" />
                                         </td>
                                         <td>Ataga Pant </td>
                                         <td>Size:L </td>

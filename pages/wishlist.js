@@ -36,7 +36,7 @@ return(
                                     <tbody>
                                         <tr>
                                         <td > 
-                                            <img className={Styles.ProductImage} src="./img/ZinniaDress.jpg"></img>
+                                            <img className={Styles.ProductImage} src="./img/ZinniaDress.jpg" alt="Zinnia Dress" />
                                         
                                         </td>
                                         <td>Zinnia Dress </td>
@@ -56,7 +56,7 @@ return(
                                         </tr>
                                         <tr>
                                         <td>
-                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg"></img>
+                                        <img className={Styles.ProductImage} src="./img/JasminePlaysuit2.jpg" alt="Zinnia Dress" />
                                         </td>
                                         <td>Jasmine Playsuit </td>
                                         <td>M </td>
@@ -74,7 +74,7 @@ return(
                                         </tr>
                                         <tr>
                                         <td>
-                                        <img className={Styles.ProductImage} src="./img/AtagaPants3.jpg"></img>
+                                        <img className={Styles.ProductImage} src="./img/AtagaPants3.jpg" alt="Ataga Pants" />
                                         </td>
                                         <td>Ataga Pant </td>
                                         <td>L </td>

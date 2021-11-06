@@ -58,7 +58,7 @@ export default function Shop() {
                     <div className={Styles.ProductContainer}>
                         <Slider {...settings}>
                             <div className={Styles.Slide}>
-                                <img src="/img/shop-demo-item.jpg" />
+                                <img src="/img/shop-demo-item.jpg" alt="item"/>
                                 <div className={Styles.TagContainer}>
                                     <div>
                                         <h3>Muna</h3>
