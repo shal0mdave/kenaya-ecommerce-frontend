@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 import Styles from '../styles/Product.module.css'
 
 import  productsService from '../services/products.service'
+import Checkout from '../components/stripe/Checkout'
 
 
 export default function Product() {
@@ -31,17 +32,14 @@ export default function Product() {
 
             productsService.get(query.id)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 setProduct(res.data)
-                setTimeout(() => {
-                    // setLoading(false)
-                }, 3000);
             })
             .catch(err => {
                 toast.error("Failed to load product");
                 console.log(err)
             })
-        }
+        } 
 
     },[query.id])
 
@@ -81,7 +79,13 @@ export default function Product() {
                                     </div>
 
                                     <div className={Styles.ButtonGroup}>
-                                        <button className={Styles.Btn}>Buy Now</button>
+                                        <Checkout
+                                            label="Buy Now"
+                                            className={Styles.Btn}
+                                            name={'Kenaya E-market'}
+                                            description={product.description}
+                                            amount={product.price * 0.023}
+                                        />
                                         <button className={Styles.Btn}>Add Cart</button>
                                     </div>
                                 </div>
