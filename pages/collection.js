@@ -47,7 +47,7 @@ export default function Collection() {
                                 <Row>
                                     <Col md={6}>
                                         <div className={Styles.Image}>
-                                            <img src="./img/JasminePlaysuit2.jpg" alt="Jasmine Playsuit" />
+                                            <img src="./img/ZinniaDress.jpg" alt="Jasmine Playsuit" />
                                         </div>
                                     </Col>
                                     <Col md={6}>

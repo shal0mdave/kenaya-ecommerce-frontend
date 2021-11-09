@@ -34,7 +34,7 @@ const Navigation = () => {
                         <Link href="/cart">
                             <a className={Styles.NavLink}><Bag /></a>
                         </Link>
-                        <Link href="/user">
+                        <Link href="/auth">
                             <a className={Styles.NavLink}><Profile /></a>
                         </Link>
                         <Link href="/search">
