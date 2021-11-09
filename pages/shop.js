@@ -91,7 +91,7 @@ export default function Shop() {
                                                 </div>
                                                 <div>
                                                     <p className={Styles.Price}>{product.currencyFormat} {product.price}</p>
-                                                    <Link href={{ pathname: 'product', query: {id: product.id} }}><a className="btn block-btn">Shop Now</a></Link>
+                                                    <Link href={{ pathname: 'product', query: {id: index} }}><a className="btn block-btn">Shop Now</a></Link>
                                                 </div>
                                             </div>
                                         </div>
