@@ -5,9 +5,10 @@ import { useState, useEffect } from 'react'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap'
 import { BsHeart } from 'react-icons'
 import { toast } from 'react-toastify'
+
 import Layout from '../components/Layout'
 import Styles from '../styles/Product.module.css'
-
+import { Heart } from '../components/icons'
 import  productsService from '../services/products.service'
 import Checkout from '../components/stripe/Checkout'
 
