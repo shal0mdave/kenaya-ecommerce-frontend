@@ -72,7 +72,7 @@ export default function Product() {
                                                 </Col>
 
                                                 <Col md={6}>
-                                                <Button className={Styles.Wishlist}> Add to wishlist</Button>
+                                                <Button className={Styles.Wishlist}> <Heart />  Add to wishlist</Button>
                                                 </Col>
                                             </Row>
                                         </Form>

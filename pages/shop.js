@@ -67,6 +67,8 @@ export default function Shop() {
                                     <Form.Label>Collection</Form.Label>
                                     <Form.Select size="lg">
                                         <option>All</option>
+                                        <option>Oasis</option>
+                                        <option>Blossom</option>
                                     </Form.Select>
                                 </Col>
                             </Row>

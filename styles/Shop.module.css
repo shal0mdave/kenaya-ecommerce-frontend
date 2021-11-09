@@ -18,7 +18,9 @@
 }
 .ShopSection .ProductContainer .Slide img{
     margin: 24px auto;
-    width: 80%;
+    width: 90%;
+    min-height: 450px;
+    object-fit: cover;
 }
 .ShopSection .ProductContainer .Slide .TagContainer{
     display: flex;
