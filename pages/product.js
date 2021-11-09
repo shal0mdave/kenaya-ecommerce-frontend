@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 import Styles from '../styles/Product.module.css'
 
 import  productsService from '../services/products.service'
+import { Heart } from '../components/icons'
 
 
 export default function Product() {
@@ -74,7 +75,7 @@ export default function Product() {
                                                 </Col>
 
                                                 <Col md={6}>
-                                                <Button className={Styles.Wishlist}> Add to wishlist</Button>
+                                                <Button className={Styles.Wishlist}> <Heart />  Add to wishlist</Button>
                                                 </Col>
                                             </Row>
                                         </Form>
