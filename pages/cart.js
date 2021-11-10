@@ -85,7 +85,7 @@ export default function Cart() {
                                             <h6>Your cart is empty</h6>
                                             <Link href="/shop">
                                                 <a>
-                                                    <Button className={Styles.ContinueEmpty} variant="outline-primary" variant="">
+                                                    <Button className={Styles.ContinueEmpty} variant="outline-primary"  >
                                                         <span> Continue Shopping</span>
                                                     </Button>
                                                 </a>
