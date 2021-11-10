@@ -27,7 +27,7 @@ export default function Mydetails() {
             state: '',      
             adress: '',
             adress2: '',
-            imageUrl: '',
+            avatar: '',
             zip: ''
         })
         
@@ -52,12 +52,12 @@ export default function Mydetails() {
             await dispatch(saveUser({
                 id: uuidv4(),
                 name: user.name,
-                phone: user.phone,
+                mobile: user.mobile,
                 birthday: user.birthday,
                 email: user.email,
                 adress: user.adress,
                 adress2: user.adress2,
-                imageUrl: user.image,
+                avatar: user.avatar,
                 zip: user.zip
             }))
             toast.success("User Info Save")
@@ -96,7 +96,7 @@ export default function Mydetails() {
                             </Form.Group>
 
                             <Form.Group as={Col} >
-                            <Form.Label>Number</Form.Label>
+                            <Form.Label>mMbile</Form.Label>
                             <Form.Control type="text" placeholder="" />
                             </Form.Group>
                         </Row>

@@ -22,7 +22,7 @@ const AdminNavigation = () => {
         state: '',      
         adress: '',
         adress2: '',
-        image: '',
+        avatar: '',
         zip: ''
     })
     
@@ -47,12 +47,12 @@ const AdminNavigation = () => {
         await dispatch(saveUser({
             id: uuidv4(),
             name: user.name,
-            phone: user.phone,
+            mobile: user.mobile,
             birthday: user.birthday,
             email: user.email,
             adress: user.adress,
             adress2: user.adress2,
-            image: user.image,
+            avatar: user.image,
             zip: user.zip
         }))
         toast.success("User Info Save")
@@ -64,7 +64,7 @@ const AdminNavigation = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <div className={Styles.ImageContainer}>
-                        <img src={user.image} alt={user.name} />
+                        <img src={user.avatar} alt={user.name} />
                     </div>
                     <div className={Styles.UserName}>
                     <h3 className={Styles.Name}>{user.name}</h3>
