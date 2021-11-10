@@ -22,7 +22,7 @@ const UserNavigation = () => {
         state: '',      
         adress: '',
         adress2: '',
-        imageUrl: '',
+        image: '',
         zip: ''
     })
     
@@ -52,7 +52,7 @@ const UserNavigation = () => {
             email: user.email,
             adress: user.adress,
             adress2: user.adress2,
-            imageUrl: user.image,
+            image: user.image,
             zip: user.zip
         }))
         toast.success("User Info Save")
@@ -64,7 +64,7 @@ const UserNavigation = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <div className={Styles.ImageContainer}>
-                        <img src={user.imageUrl} alt={user.name} />
+                        <img src={user.image} alt={user.name} />
                     </div>
                     <div className={Styles.UserName}>
                     <h3 className={Styles.Name}>{user.name}</h3>

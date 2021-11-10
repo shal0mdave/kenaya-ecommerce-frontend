@@ -12,7 +12,7 @@ import { useDispatch } from 'react-redux'
 const AdminNavigation = () => {
     const dispatch = useDispatch()
     const { query } = useRouter();
-    const [user, setUser] = useState({
+    const [admin, setAdmin] = useState({
         id: '',
         name: '',
         phone: '',
@@ -22,7 +22,7 @@ const AdminNavigation = () => {
         state: '',      
         adress: '',
         adress2: '',
-        imageUrl: '',
+        image: '',
         zip: ''
     })
     
@@ -36,7 +36,7 @@ const AdminNavigation = () => {
                 serUser(res.data)
             })
             .catch(err => {
-                toast.error("Failed to load user");
+                toast.error("Failed to load Admin");
                 console.log(err)
             })
         } 
@@ -52,7 +52,7 @@ const AdminNavigation = () => {
             email: user.email,
             adress: user.adress,
             adress2: user.adress2,
-            imageUrl: user.image,
+            image: user.image,
             zip: user.zip
         }))
         toast.success("User Info Save")
@@ -64,7 +64,7 @@ const AdminNavigation = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <div className={Styles.ImageContainer}>
-                        <img src={user.imageUrl} alt={user.name} />
+                        <img src={user.image} alt={user.name} />
                     </div>
                     <div className={Styles.UserName}>
                     <h3 className={Styles.Name}>{user.name}</h3>
