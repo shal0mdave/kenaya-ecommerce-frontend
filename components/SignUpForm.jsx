@@ -3,6 +3,10 @@ import { Row, Col, Button } from 'react-bootstrap'
 import Styles from '../styles/Auth.module.css'
 import { GoogleSignIn, FacebookSignIn  } from './icons'
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { GoogleLogin } from 'react-google-login';
+// import { auth, registerWithEmailAndPassword, signInWithGoogle } from '../firebase/firebase'
+
+
 
 const SignUpForm = () => {
     const [email, setEmail] = useState('')
@@ -21,6 +25,10 @@ const SignUpForm = () => {
         }
     }
 
+    const responseGoogle = (response) => {
+        console.log(response);
+    }
+
     return (
         <Row>
             <Col md={6}>
@@ -29,6 +37,13 @@ const SignUpForm = () => {
                     <div className={Styles.AuthMethods}>
                         <a>
                             <GoogleSignIn />
+                            <GoogleLogin
+                                clientId="184606835782-sdis3vil6ekcj9b0t23ocs6iqmj66p7m.apps.googleusercontent.com"
+                                buttonText="Login"
+                                onSuccess={responseGoogle}
+                                onFailure={responseGoogle}
+                                cookiePolicy={'single_host_origin'}
+                            />
                         </a>
                         <a>
                             <FacebookSignIn/>

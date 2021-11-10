@@ -1,19 +1,21 @@
-import Head from 'next/head'
-import Link from 'next/link'
+
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 import { Col, Container, Form, Row, Button } from 'react-bootstrap'
-import { BsHeart } from 'react-icons'
 import { toast } from 'react-toastify'
+import { useDispatch } from 'react-redux'
 
 import Layout from '../components/Layout'
 import Styles from '../styles/Product.module.css'
 import { Heart } from '../components/icons'
 import  productsService from '../services/products.service'
 import Checkout from '../components/stripe/Checkout'
+import { addProduct } from '../redux/slices/cart'
 
 
 export default function Product() {
+    const dispatch = useDispatch()
     const { query } = useRouter();
     const [product, setProduct] = useState({
         id: '',
@@ -24,12 +26,12 @@ export default function Product() {
         availableSizes: [],
         wearing: ''
     })
-    const [loading, setLoading] = useState(false)
+    const [size, setSize] = useState('S')
     
 
     useEffect(() => {
 
-        if (query.id) {
+        if (query.id && product) {
 
             productsService.get(query.id)
             .then(res => {
@@ -43,6 +45,18 @@ export default function Product() {
         } 
 
     },[query.id])
+
+    const onAddToCartClick  = async() => {
+        await dispatch(addProduct({
+            id: uuidv4(),
+            name: product.name,
+            price: product.price,
+            imageUrl: product.imageUrl,
+            size: size,
+            description: product.description
+        }))
+        toast.success("Item added to cart")
+    }
 
 	return (
 		<Layout>
@@ -67,13 +81,13 @@ export default function Product() {
                                             <Row>
                                                 <Col md={6}>
                                                     <Form.Label>Size:</Form.Label>
-                                                    <Form.Select size="lg">
-                                                        {product.availableSizes.map(size => ( <option key={size}>{size}</option> ))}
+                                                    <Form.Select size="lg" onChange={(e) => setSize(e.target.value)}>
+                                                        {product.availableSizes.map(size => ( <option value={size} key={size}>{size}</option> ))}
                                                     </Form.Select>
                                                 </Col>
 
                                                 <Col md={6}>
-                                                <Button className={Styles.Wishlist}> <Heart />  Add to wishlist</Button>
+                                                <Button onClick={() => toast.info('Wishlists coming soon')} className={Styles.Wishlist}> <Heart />  Add to wishlist</Button>
                                                 </Col>
                                             </Row>
                                         </Form>
@@ -87,7 +101,7 @@ export default function Product() {
                                             description={product.description}
                                             amount={product.price * 0.023}
                                         />
-                                        <button className={Styles.Btn}>Add Cart</button>
+                                        <button onClick={() => onAddToCartClick()} className={Styles.Btn}>Add to Cart</button>
                                     </div>
                                 </div>
                             </Col>
