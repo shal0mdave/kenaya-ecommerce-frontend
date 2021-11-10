@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Row, Col, Button } from 'react-bootstrap'
+import { toast } from 'react-toastify'
 import Styles from '../styles/Auth.module.css'
 import { GoogleSignIn, FacebookSignIn  } from './icons'
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -27,6 +28,7 @@ const SignUpForm = () => {
 
     const responseGoogle = (response) => {
         console.log(response);
+        toast.success('Client/admin area currently unavailable')
     }
 
     return (
@@ -36,9 +38,14 @@ const SignUpForm = () => {
                     <h1>Create Account</h1>
                     <div className={Styles.AuthMethods}>
                         <a>
-                            <GoogleSignIn />
+                            {/* <GoogleSignIn /> */}
                             <GoogleLogin
                                 clientId="184606835782-sdis3vil6ekcj9b0t23ocs6iqmj66p7m.apps.googleusercontent.com"
+                                render={renderProps => (
+                                    <button style={{background:'none', border:'none'}} onClick={renderProps.onClick} disabled={renderProps.disabled}>
+                                        <GoogleSignIn /> 
+                                    </button>
+                                )}
                                 buttonText="Login"
                                 onSuccess={responseGoogle}
                                 onFailure={responseGoogle}
