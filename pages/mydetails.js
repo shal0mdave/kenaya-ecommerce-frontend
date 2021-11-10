@@ -1,16 +1,75 @@
 import { Col, Container, Row, Button, Table, Form } from 'react-bootstrap'
+import { UserNavbar } from '../components'
 import Layout from '../components/Layout'
 import Styles from '../styles/Mydetails.module.css'
 
+import Link from 'next/link'
+import { toast } from 'react-toastify'
+import { useSelector } from 'react-redux'
+
+import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
+
+import { useDispatch } from 'react-redux'
 
 export default function Mydetails() {
+
+
+        const dispatch = useDispatch()
+        const { query } = useRouter();
+        const [user, setUser] = useState({
+            id: '',
+            name: '',
+            phone: '',
+            birthday: '',
+            email: '',
+            city: '',
+            state: '',      
+            adress: '',
+            adress2: '',
+            imageUrl: '',
+            zip: ''
+        })
+        
+        useEffect(() => {
+    
+            if (query.id && user) {
+    
+                usersService.get(query.id)
+                .then(res => {
+                    // console.log(res.data)
+                    setUser(res.data)
+                })
+                .catch(err => {
+                    toast.error("Failed to load user");
+                    console.log(err)
+                })
+            } 
+    
+        },[query.id])
+
+        const onSaveChangesClick  = async() => {
+            await dispatch(saveUser({
+                id: uuidv4(),
+                name: user.name,
+                phone: user.phone,
+                birthday: user.birthday,
+                email: user.email,
+                adress: user.adress,
+                adress2: user.adress2,
+                imageUrl: user.image,
+                zip: user.zip
+            }))
+            toast.success("User Info Save")
+        }
+
 	return (
         <Layout>
             <section className={Styles.MydetailsSection}>
                 <Container>
                     <Row>
                         <Col md={5}>
-                        
+                        <UserNavbar/> 
                         </Col>
 
                         <Col  md={7}>
@@ -66,7 +125,7 @@ export default function Mydetails() {
                                 <option value="C">Congo</option>
                                 <option value="CA">Canada</option>
                                 <option value="I">Italia</option>   
-                                <option value="M">Mauritius</option>
+                               <option value="M">Mauritius</option>
                                 <option value="S">Spain</option>
                                 <option value="U">USA</option>
                             </Form.Select>
@@ -83,10 +142,9 @@ export default function Mydetails() {
                             </div>
 
                                 {/* ... */}
-                                <Button variant="primary" type="submitg">
+                                <Button onClick={() => onSaveChangesClick()} variant="primary" type="submitg">
                                     Save Changes
-                                </Button>
-                            
+                                </Button>     
                         </Col>
                     </Row>
 
