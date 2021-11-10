@@ -62,30 +62,50 @@ const UserNavigation = () => {
     return (
         <Navbar className={Styles.Nav} collapseOnSelect expand="lg" variant="light" >
             <Container>
-                <Navbar.Brand href="/">
+                
                     <div className={Styles.ImageContainer}>
                         <img src={user.avatar} alt={user.name} />
                     </div>
                     <div className={Styles.UserName}>
                     <h3 className={Styles.Name}>{user.name}</h3>
                     </div>
-                </Navbar.Brand>
+         
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
+                     <ul>
+                        <li>
                         <Link href="/myorders">
                             <a className={Styles.NavLink}>My Orders</a>
                         </Link >
+                        </li>
+                        <li>
                         <Link href="/mydetails">
                             <a className={Styles.NavLink}>My Details</a>
-                        </Link>
+                        </Link >
+
+                        </li>
+                        <li>
                         <Link href="/cards">
                             <a onClick={() => toast.info('Cards Feature coming soon')} className={Styles.NavLink}>Cards</a>
                         </Link>
+
+                        </li>
+                        <li>
                         <Link href="/wishlist">
                             <a onClick={() => toast.info('Wishlists Feature coming soon')}  className={Styles.NavLink}>Whishlit </a>
                         </Link>
-                            <button  className={Styles.Logout}>Logout </button>
+                        </li>
+                        <li>
+                        <button  className={Styles.Logout}>Logout </button>
+                        </li>
+                    
+                     </ul>
+                      
+                      
+                        
+                        
+                     
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -73,26 +73,56 @@ const AdminNavigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mx-auto">
-                        <Link href="/dashboard">
-                            <a onClick={() => toast.info('dasboard Feature coming soon')} className={Styles.NavLink}>Dashboard</a>
-                        </Link >
-                        <Link href="/orders">
-                            <a onClick={() => toast.info('orders Feature coming soon')} className={Styles.NavLink}>Orders</a>
-                        </Link>
-                        <Link href="/products">
-                            <a className={Styles.NavLink}>Products</a>
-                        </Link>
-                        <Link href="/categories">
-                            <a className={Styles.NavLink} onClick={() => toast.info('Categories Feature coming soon')}>Categories</a>
-                        </Link>
-                        <Link href="/collections">
-                            <a onClick={() => toast.info('collection Feature coming soon')} className={Styles.NavLink}>Cards</a>
-                        </Link>
-                        <Link href="/users">
-                            <a onClick={() => toast.info('users Feature coming soon')}  className={Styles.NavLink}>Whishlit </a>
-                        </Link>
-                            <button  className={Styles.Logout}>Logout </button>
-                    </Nav>
+                        <ul>
+                                <li>
+                                    <Link href="/dashboard">
+                                        <a onClick={() => toast.info('dasboard Feature coming soon')} className={Styles.NavLink}>Dashboard</a>
+                                    </Link >
+                                </li>
+
+                                <li>
+                                    <Link href="/orders">
+                                        <a onClick={() => toast.info('orders Feature coming soon')} className={Styles.NavLink}>Orders</a>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/products">
+                                      <a className={Styles.NavLink}>Products</a>
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/categories">
+                                         <a className={Styles.NavLink} onClick={() => toast.info('Categories Feature coming soon')}>Categories</a>
+                                     </Link>
+                                
+                                </li>
+
+                                <li>
+                                <Link href="/collections">
+                                    <a onClick={() => toast.info('collection Feature coming soon')} className={Styles.NavLink}>Cards</a>
+                                </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/users">
+                                        <a onClick={() => toast.info('users Feature coming soon')}  className={Styles.NavLink}>Whishlit </a>
+                                    </Link>
+                                
+                                </li>
+                                <li>
+                                <button  className={Styles.Logout}>Logout </button>
+                    
+                                </li>
+                        </ul>
+                        
+                        
+                       
+                        </Nav>
+                       
+                        
+                            
                 </Navbar.Collapse>
             </Container>
         </Navbar>

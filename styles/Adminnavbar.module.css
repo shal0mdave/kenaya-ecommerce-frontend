@@ -13,20 +13,27 @@
 
 
 }
-
 .NavLink{
-    font-size: 18px;
     padding: 8px;
-    padding-left: 42px;
     color: white;
     text-decoration: none;
     font-family: var(--font-family-poppins);
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
 }
 
+.Nav ul li {
+    text-decoration: none;
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 8px;
+    list-style:none;
+}
+
+.Nav ul li a {
+    text-decoration: none;
+  
+}
 
 .NavLink:hover{
     opacity: 80% ;

@@ -2,25 +2,7 @@ import { Row, Col, Button } from 'react-bootstrap'
 import Styles from '../styles/Auth.module.css'
 
 const SignInForm = () => {
-    
-const SignInManualHandler = () => {
-    
-    if(!email || !password) {
-        setError('Please fill all the fields')
-    } else {
-        setError('')
-        console.log(email, password)
-    }
-        e.preventDefault()
-        const formData = e.detail.formData
-        const submitBtn = document.querySelector('.submit-btn')
-        submitBtn.setAttribute('loading', '')    
-        
-        // sign in using Auth    
-        Auth.signIn(formData, () => {
-          submitBtn.removeAttribute('loading')
-        })
-      }
+ 
 
 
     return (
@@ -39,7 +21,7 @@ const SignInManualHandler = () => {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label">Password:</label>
-                        <input type="password" className="form-control" placeholder="" required toggle-password/>
+                        <input type="password" className="form-control" placeholder="" required/>
                     </div>
                     <div className="mb-3">
                         <a>Forgot your password?</a>

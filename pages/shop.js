@@ -39,6 +39,21 @@ export default function Shop() {
         speed: 500
     }
 
+    const location = userLocation();
+    console.log(location.pathname.split("/")[2]); 
+
+    const [filter,setFilters]= useState({})
+
+    const handleFilters = (e) =>{
+        const vqlue = e.taget.value;
+        setFilters({
+            [e.target.name]: value,
+        });
+    };
+
+    console.log(filter)
+
+
 	return (
 		<Layout>
             <Head>
@@ -54,7 +69,7 @@ export default function Shop() {
                                 <Col md={3}>
                                     <Form.Group className={Styles.Mb}>
                                         <Form.Label>Shop</Form.Label>
-                                        <Form.Select size="lg">
+                                        <Form.Select className={Styles.categories} onChange={handleFilters} size="lg">
                                             <option>All</option>
                                             <option>Dress</option>
                                             <option>Top</option>
@@ -65,7 +80,7 @@ export default function Shop() {
                                 </Col>
                                 <Col md={3}>
                                     <Form.Label>Collection</Form.Label>
-                                    <Form.Select size="lg">
+                                    <Form.Select className={Styles.Collections} onChange={handleFilters} size="lg">
                                         <option>All</option>
                                         <option>Oasis</option>
                                         <option>Blossom</option>
